@@ -12,12 +12,13 @@
 格式如 --platform=linux/amd64 n8nio/n8n:1.108.1<br>
 可使用 k8s.gcr.io/kube-state-metrics/kube-state-metrics 格式指定私库<br>
 可使用 #开头作为注释<br>
-![](doc/images.png)
+
 文件提交后，自动进入Github Action构建
 
 ### 使用镜像
 回到阿里云，镜像仓库，点击任意镜像，可查看镜像状态。(可以改成公开，拉取镜像免登录)
-![](doc/开始使用.png)
+私人先登录，固定密码开通
+如何操作点击镜像
 
 在国内服务器pull镜像, 例如：<br>
 ```
@@ -30,7 +31,7 @@ alpine 即 阿里云中显示的镜像名<br>
 ### 多架构
 需要在images.txt中用 --platform=xxxxx手动指定镜像架构
 指定后的架构会以前缀的形式放在镜像名字前面
-![](doc/多架构.png)
+
 
 ### 镜像重名
 程序自动判断是否存在名称相同, 但是属于不同命名空间的情况。
@@ -39,8 +40,7 @@ alpine 即 阿里云中显示的镜像名<br>
 ```
 xhofe/alist
 xiaoyaliu/alist
-```
-![](doc/镜像重名.png)
+
 
 ### 定时执行
 修改/.github/workflows/docker.yaml文件
