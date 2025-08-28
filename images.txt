@@ -2,3 +2,5 @@
 --platform=linux/amd64 n8nio/n8n:1.108.1
 --platform=linux/amd64 debian:bookworm-slim
 --platform=linux/amd64 python:3.11.13-slim-bookworm
+--platform=linux/amd64 0001coder/coolcrawl-server:latest
+--platform=linux/amd64 0001coder/coolcrawl-worker:latest
